@@ -1,0 +1,2 @@
+# List any additional Python packages needed
+odoo-addon-helper==1.0.0
