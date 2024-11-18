@@ -1,1 +1,0 @@
-from .my_odoo_module import controllers

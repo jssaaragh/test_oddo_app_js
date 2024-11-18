@@ -1,0 +1,37 @@
+# views/my_docker_model_views.xml
+<odoo>
+    <record id="view_my_docker_model_form" model="ir.ui.view">
+        <field name="name">my.docker.model.form</field>
+        <field name="model">my.docker.model</field>
+        <field name="arch" type="xml">
+            <form string="My Docker Model">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_my_docker_model_tree" model="ir.ui.view">
+        <field name="name">my.docker.model.tree</field>
+        <field name="model">my.docker.model</field>
+        <field name="arch" type="xml">
+            <tree string="My Docker Model">
+                <field name="name"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <menuitem id="menu_my_docker_model_root" name="My Docker App"/>
+    <menuitem id="menu_my_docker_model" parent="menu_my_docker_model_root" name="My Docker Models" action="action_my_docker_model"/>
+
+    <record id="action_my_docker_model" model="ir.actions.act_window">
+        <field name="name">My Docker Model</field>
+        <field name="res_model">my.docker.model</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>v
