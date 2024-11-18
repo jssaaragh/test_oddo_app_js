@@ -1,5 +1,18 @@
 # README.md
+
 # My Python Docker App
+A FastAPI CRUD app integrated with Odoo and deployed via Docker.
+
+## Key Features
+- Full CRUD operations using FastAPI.
+- PostgreSQL database integration.
+- Pre-configured for Docker and Docker Compose.
+
+## Installation
+Follow the standard Odoo app installation process.
+
+<img src="static/description/icon.png" alt="App Icon" width="128">
+
 This module is a basic example for creating an Odoo app that can be listed on the Odoo Marketplace. It includes:
 - A model (`my.docker.model`) with name and description fields.
 - A controller for a basic "Hello, world" webpage.
